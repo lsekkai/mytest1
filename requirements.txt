@@ -3,3 +3,4 @@ flask
 flask_migrate
 sqlalchemy_utils
 jsonpickle
+gunicorn==19.9.0
