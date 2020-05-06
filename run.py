@@ -15,7 +15,7 @@ if ENV=='dev':
 
     DB_URI = 'sqlite:///test.db'
 else:
-    DB_URI = 'postgres://qmyltgravdnnvk:da98a9accaa92a6bed0ccb71660494080a353a4d7078bb02f8079c904ad244cc@ec2-54-247-89-181.eu-west-1.compute.amazonaws.com:5432/d683tcku0r9hn5'
+    DB_URI = 'postgres://sscsdpbdphavzu:514d5cafbcb6bc771cc5a5e47e441b064588e2e9a6c773852c453a37b0f5409b@ec2-54-247-79-178.eu-west-1.compute.amazonaws.com:5432/d30k5i5g0qluvo'
 app.config['SQLALCHEMY_DATABASE_URI'] = DB_URI
 app.config['SESSION_TYPE'] = 'filesystem'
 app.config['SECRET_KEY'] = 'super secret key'
