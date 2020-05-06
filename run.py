@@ -9,13 +9,13 @@ from models import db, Translation, User
 
 app = Flask(__name__, template_folder="templates/",
                       static_folder="templates/")
-#DB_URI = 'sqlite:///test.db'
-ENV = 'deploy'
-if ENV=='dev':
+DB_URI = 'sqlite:///test.db'
+#ENV = 'deploy'
+#if ENV=='dev':
 
-    DB_URI = 'sqlite:///test.db'
-else:
-    DB_URI = 'postgres://sscsdpbdphavzu:514d5cafbcb6bc771cc5a5e47e441b064588e2e9a6c773852c453a37b0f5409b@ec2-54-247-79-178.eu-west-1.compute.amazonaws.com:5432/d30k5i5g0qluvo'
+ #   DB_URI = 'sqlite:///test.db'
+#else:
+ #   DB_URI = 'postgres://sscsdpbdphavzu:514d5cafbcb6bc771cc5a5e47e441b064588e2e9a6c773852c453a37b0f5409b@ec2-54-247-79-178.eu-west-1.compute.amazonaws.com:5432/d30k5i5g0qluvo'
 app.config['SQLALCHEMY_DATABASE_URI'] = DB_URI
 app.config['SESSION_TYPE'] = 'filesystem'
 app.config['SECRET_KEY'] = 'super secret key'
